@@ -1,15 +1,15 @@
 #include "main.h"
-/*
- * void print_alphabet(void): alphabet printing
+#include <unistd.h>
+/**
+ * print_alphabet - lowercase alphabet is being printed
  */
 void print_alphabet(void)
 {
-	char l = 'a';
+	char k;
 
-	while (l <= 'z')
+	for (k = 'a'; k <= 'z'; k++)
 	{
-		_putchar(l);
-		_putchar('\n');
-		l++;
+		_putchar(k);
 	}
+	_putchar('\n');
 }
