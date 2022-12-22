@@ -1,16 +1,17 @@
+#include <unistd.h>
 #include "main.h"
 /**
- * void print_alphabet_x10(void); - alphabet ten times
+ * print_alphabet_x10 - prints alphabets as desired in occcurence
  */
 void print_alphabet_x10(void)
 {
-	int ten;
-	char l;
+	int A;
+	char k;
 
-	for (ten = 0; ten <= 9; ten++)
+	for (A = 0; A <= 9; A++)
 	{
-		for (l = 'a'; l <= 'z'; l++)
-			_putchar(l);
+		for (k = 'a'; k <= 'z'; k++)
+			_putchar(k);
 		_putchar('\n');
 	}
 }
