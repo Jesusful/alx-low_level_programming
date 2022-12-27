@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_last_digit - Remainder
- *@c: wonderful dividened
+ * print_last_digit - last digit
+ * @c: the integers
  *
- * Return: the value of k
+ * Return: the value printing
  */
 int print_last_digit(int c)
 {
@@ -12,6 +12,7 @@ int print_last_digit(int c)
 
 	if (c < 0)
 		c = -c;
+
 	k = c % 10;
 	_putchar(k + '0');
 	return (k);
