@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * print_last_digit - last digit printing
- *@k: intergers to print numbers
- *Return: 0
+ * print_last_digit - Remainder
+ *@c: wonderful dividened
+ *
+ * Return: the value of k
  */
-int print_last_digit(int k)
+int print_last_digit(int c)
 {
-	int M;
+	int k;
 
-	if (k < 0)
-		k = -k;
-	M = k % 10;
-	_putchar(M + '0');
-	return (M);
+	if (c < 0)
+		c = -c;
+	k = c % 10;
+	_putchar(k + '0');
+	return (k);
 }
