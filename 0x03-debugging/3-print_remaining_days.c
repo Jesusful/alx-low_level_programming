@@ -6,6 +6,7 @@
  * @month: month of the year in format, number
  * @day: Days of the week/month/year
  * @year: the overaw
+ * Return: void
  */
 
 void print_remaining_days(int month, int day, int year)
