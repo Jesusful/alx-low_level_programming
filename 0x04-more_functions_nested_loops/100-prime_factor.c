@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 /**
- * main - Execution begins
+ * main - Execution
+ *
  * Return: 0
  */
 int main(void)
 {
-	long a, max;
+	long k, total;
 	long num = 612852475143;
-	double sq = sqrt(num);
+	double sq = sqrt(612852475143);
 
-	for (a = 1; a <= sq; a++)
+	for (k = 1; k <= sq; k++)
 	{
-		if (num % a == 0)
+		if (num % k == 0)
 		{
-			max = num / a;
+			total = num / k;
 		}
 	}
-		printf("%ld\n", max);
+		printf("%ld\n", total);
 		return (0);
 }
