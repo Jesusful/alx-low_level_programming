@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <string.h>
+#include <time.h>
+
 /**
- * main - Entry point
+ * main - Execution
  * Return: 0
  */
 int main(void)
 {
-	int j;
+	int x, y;
 
-	for (j = 0; j <= 10; j++)
+	for (x = '0'; x < '9'; x++)
 	{
-		putchar(j + '0');
-
-		if (j != 9)
+		for (y = x + 1; y <= '9'; y++)
 		{
-			putchar(',');
-			putchar(' ');
-			putchar(j + '0');
+			if (y != x)
+			{
+				putchar(x);
+				putchar(y);
+				if (x == '0' && y == '1')
+					continue;
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
