@@ -15,12 +15,12 @@ int main(void)
 		if (i == 0)
 			printf("%ld", k);
 		else if (i == 1)
-			printf(" ,%ld", m);
+			printf(", %ld", m);
 		else
 		{
 			m += k;
 			k = m - k;
-			printf(" ,%ld", m);
+			printf(", %ld", m);
 		}
 	}
 	printf("\n");
