@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i = 0;
-	long a = 1, b = 2, sum = a + b, bi = b;
+	long a = 1, b = 2, bi = b;
 
-	while (sum < 4000000)
+	while (b + a < 4000000)
 	{
 		b += a;
 		if (b % 2 == 0)
